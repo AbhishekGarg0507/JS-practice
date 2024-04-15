@@ -87,4 +87,39 @@ num1 = num2 = num3 = 2+2;
 
 let gameCounter = 100
 ++gameCounter;
-console.log(gameCounter);
+// console.log(gameCounter);
+
+
+
+// interview prespective 
+
+// basically 2 types of data types premitive and non premitive or refrence type
+// premitive -> 7 -> call by value
+
+// String, Number, Boolean, null, undefined, Symbol , BigInt 
+
+// Symbol
+const id = Symbol('123')
+const anotherId = Symbol('123')
+// console.log(id === anotherId);
+
+// const bigNumber = 48646854165341653n  -> bigint
+
+// js is dynamically typed language.
+
+// Refrenve type (non-premitive)
+// Array , Objects, Functions
+
+
+const heros = ['shaktiman' , 'batman' , 'doga', 'superman']
+
+let myObj = {
+    name:'abhishek',
+    age:24,
+};
+
+const myFun = function(){
+    console.log('hello world');
+}
+
+console.log(typeof heros);
