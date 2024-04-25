@@ -15,7 +15,7 @@ console.log(fullName);
 
 // Heap(Non-premitive)
 //  -> Heap gives us the refrence of the variable stored in the memory and the changes made in the original itself.
-
+// -> dynamicaly type data in heap
 let userOne = {
     name:'User1',
     age:12
