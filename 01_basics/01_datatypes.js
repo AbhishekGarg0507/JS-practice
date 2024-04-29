@@ -1,36 +1,60 @@
-"use strict";  // treat all js code as newer version
+"use strict";  // treat all js code as newer version 
 
 // alert("hello")  => we are using nodejs thats why the syntax is different
+
+// ===============================Datatypes======================================
+// memory is define at the runtime 
+// js interprater first check the type of the data , when we declare the variables and asign data 
+
 
 // code readibility must be high
 
 // string => " "
-let name = "abhishek"
+// let name = "abhishek"
 
 // number => 2 to power 53
+/*
+    let number = 10
+    let age = 23
+    number = 10.25
+    number = infinity
+    number = NaN
+    these all are type number 
+*/ 
+
 // bigint
-let age = 23
+// if we want to store the integer greater then the capacity of the number then we use bigint
+// this will work only for integer
+// bigint was introduced in 2020
+// 1. let number = BigInt(number)  output-> will have a 'n' in the end
+// 2. let number = 111111111111111111111111111111111111n  -> by definig n in the end the interprator will understand that the number is in the form of bigint.
 
 // boolean => true/false
-let isLoggedIn = false;
+// let isLoggedIn = false;
+
 
 // null => stand alone value in js , it is a representation of expty value
+// console.log(typeof null); // output => object
+// 
+
+// according to GEC (global execution context) , while defining the variable with var by defalut every variable has a value of undefined.
+
 // undefined => when the value is not defined
+// console.log(typeof undefined);  // output => undeined
+
 // symbol => unique value
 
 
 // object
-// console.log(typeof undefined);  // output => undeined
-// console.log(typeof null); // output => object
 
 
 //  conversion operations
-let score = "abhishek"
+// let score = "abhishek"
 
 // console.log(typeof score);
 // console.log( typeof(score));
 
-let valueInNumber = Number(score)
+// let valueInNumber = Number(score)
 // console.log(typeof valueInNumber);
 // console.log(valueInNumber);
 
@@ -38,9 +62,9 @@ let valueInNumber = Number(score)
 // "33abc" => gives NaN after converting
 // "true" => gives 1
 
-isLoggedIn = ""
+// isLoggedIn = ""
 
-let booleanIsLoggedIn = Boolean(isLoggedIn);
+// let booleanIsLoggedIn = Boolean(isLoggedIn);
 // console.log(booleanIsLoggedIn); 
 
 // 1 => true
@@ -49,15 +73,15 @@ let booleanIsLoggedIn = Boolean(isLoggedIn);
 // "abhi " => true
 // " " => true
 
-let someNumber = 33
-let stringNumber = String(someNumber)
+// let someNumber = 33
+// let stringNumber = String(someNumber)
 // console.log(typeof stringNumber);
 // console.log(stringNumber);
 
 // ======================= OPERATIONS ======================================
 
-let value = 3
-let negValue = -value
+// let value = 3
+// let negValue = -value
 // console.log(negValue);
 
 // console.log(2+2);
@@ -67,9 +91,9 @@ let negValue = -value
 // console.log(2/3);
 // console.log(2%3);
 
-let str1 = "hello"
-let str2 = " abhishek"
-let str3 = str1 + str2
+// let str1 = "hello"
+// let str2 = " abhishek"
+// let str3 = str1 + str2
 // console.log(str3);
 
 // console.log("1" + 2);
@@ -82,11 +106,11 @@ let str3 = str1 + str2
 // console.log(+true);
 // console.log(+"");
 
-let num1 , num2 , num3
-num1 = num2 = num3 = 2+2;
+// let num1 , num2 , num3
+// num1 = num2 = num3 = 2+2;
 
-let gameCounter = 100
-++gameCounter;
+// let gameCounter = 100
+// ++gameCounter;
 // console.log(gameCounter);
 
 
@@ -99,8 +123,8 @@ let gameCounter = 100
 // String, Number, Boolean, null, undefined, Symbol , BigInt 
 
 // Symbol
-const id = Symbol('123')
-const anotherId = Symbol('123')
+// const id = Symbol('123')
+// const anotherId = Symbol('123')
 // console.log(id === anotherId);
 
 // const bigNumber = 48646854165341653n  -> bigint
@@ -111,15 +135,15 @@ const anotherId = Symbol('123')
 // Array , Objects, Functions
 
 
-const heros = ['shaktiman' , 'batman' , 'doga', 'superman']
+// const heros = ['shaktiman' , 'batman' , 'doga', 'superman']
 
-let myObj = {
-    name:'abhishek',
-    age:24,
-};
+// let myObj = {
+//     name:'abhishek',
+//     age:24,
+// };
 
-const myFun = function(){
-    console.log('hello world');
-}
+// const myFun = function(){
+//     console.log('hello world');
+// }
 
-console.log(typeof heros);
+// console.log(typeof heros);
